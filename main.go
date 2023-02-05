@@ -30,7 +30,6 @@ func main() {
 
 		account := strings.Split(accounts[i], ":")
 		proxy := proxies[rand.Intn(len(proxies))]
-		proxy = fmt.Sprintf(proxy, utils.RandomString(6))
 
 		go func(username, password, proxy string) {
 			defer waitGroup.Done()
