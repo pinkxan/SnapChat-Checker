@@ -35,7 +35,7 @@ func CheckAccount(client request.RequestsClient, data map[string]string) (string
 	r_payload := map[string]interface{}{}
 	json.Unmarshal([]byte(body), &r_payload)
 
-	if data["status"] != "" {
+	if r_payload["status"] != "-100" {
 		return "bad", r_payload
 	}
 	return "good", r_payload
