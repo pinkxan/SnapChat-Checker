@@ -1,4 +1,1 @@
-== FORMAT ==
-username:password
-
-== ACCOUNTS ==
+booba:man
